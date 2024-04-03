@@ -34,10 +34,10 @@ To run the client type into the terminal:</br>
 Image showing the client run with both responses.
 
 <h1>Task 3</h1>
-This is a multithreades server that is capable of serving multiple request simultaneously. To run the server type <code>python3 task3.py</code> in the terminal.
+This is a multithreaded server that is capable of serving multiple request simultaneously. To run the server type <code>python3 task3.py</code> in the terminal.
 
 ![Multithreaded server](Images/Task3.png)
-Image shows the server running with multiple connections at the same time. I used the same client as in task 2 from different terminal windows.
+Image shows the server running with multiple connections at the same time. I used the same client as in task 2 from multiple terminal windows.
 
 
 
