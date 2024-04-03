@@ -4,6 +4,8 @@ import sys # In order to terminate the program
 '''
 This script sets up a basic HTTP server that can accept connections from clients, 
 send responses back to the clients, and handle basic error. The server can handle one request at a time. 
+After serving a file or handling an error, it goes back to waiting for another connection. 
+It keeps running until manually stopped.
 '''
 #Prepare a server socket
 serverSocket = socket(AF_INET, SOCK_STREAM)
