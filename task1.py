@@ -1,7 +1,10 @@
 #import socket module
 from socket import *
 import sys # In order to terminate the program
-
+'''
+This script sets up a basic HTTP server that can accept connections from clients, 
+send responses back to the clients, and handle basic error. The server can handle one request at a time. 
+'''
 #Prepare a server socket
 serverSocket = socket(AF_INET, SOCK_STREAM)
 port = 8000
@@ -21,8 +24,8 @@ while True:
         #Get the file name
         filename = message.split()[1]
         # If the filename is root, redirect to index.html
-        if filename == '/':
-            filename = '/index.html'
+        #if filename == '/':
+        #    filename = '/index.html'
         #Open and read the file
         f = open(filename[1:])
         #Send one HTTP header line into socket
