@@ -1,11 +1,11 @@
 import argparse
 from socket import *
+
 '''
 The main function is used to create an HTTP GET request, send it to a server, 
 receive the server's response, and print that response. The main function takes server_ip, 
 server_port and filename as arguments. The function doesn't return anything. 
 But it prints the response received from the server to the console.'''
-
 def main(server_ip, server_port, filename):
     # Create a TCP client socket
     client_sd = socket(AF_INET,SOCK_STREAM) 

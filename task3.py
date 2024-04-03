@@ -3,10 +3,21 @@ import _thread as thread
 import time
 import sys 
 
+#Function that use the time library to return the current time
 def now():
-    #Returns the current time
     return time.ctime(time.time())
 
+'''
+The handleClient() function will process a single client request on a given socket connection.
+It takes one argument, the connectionSocket which represents the socket connection between 
+the server and client. The function uses this connection to receive a file request from the 
+client, send a response back to the client, and ultimately close the connection.
+
+The function has a try/except block to handle IOError exceptions.
+
+The function does not return any value, because its purpose is to carry out a series of operationsing
+not to compute a result.
+'''
 def handleClient(connectionSocket):
     try:
         #Get the client request
@@ -39,6 +50,16 @@ def handleClient(connectionSocket):
         #Close client socket
         connectionSocket.close()
 
+'''
+The main() function sets up a server that listens for incoming connections on port 8000.
+When a connection is established, it creates a new thread to handle the client's request, 
+allowing for concurrent processing of multiple client requests.
+
+The function includes a try/except block to handle exceptions.
+If an exception occurs it prints an error message and exits the program.
+
+The function does not return a value. Its purpose is to set up the server and manage 
+incoming client connections'''
 def main():
     #Creates a server socket, listens for new connections and
     #spawns a new thread whenever a new connection join
