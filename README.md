@@ -1,4 +1,4 @@
-<h2>Second oblig from course DATA2410 Networking and Cloud Computing</h2>
+<h2>Second oblig from course DATA2410 Networking and Cloud Computing.</h2>
 
 The scripts are based on the skeleton code provided in the assignment and examples provided in our labs. I have adapted the examples to fit the requirements of the assignment. The original code was used as a foundation, and I've built upon it by adding, modifying, and removing parts as necessary.
 
